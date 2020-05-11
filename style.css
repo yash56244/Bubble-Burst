@@ -1,0 +1,55 @@
+canvas{
+    background-color: black;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%);
+    visibility: hidden;
+}
+#gaunlet{
+    position: absolute;
+    top: 40%;
+    visibility: hidden;
+    left: 100%;
+    transform: translate(-100%);
+    width: calc(820px/4.2);
+    height: 326px;
+    background: url('gaunlet.png');
+}
+body{
+    background-color: cornflowerblue;
+}
+#play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    background-color: aquamarine;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#play:hover{
+    transform: translate(-50%,-50%) scale(1.1);
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2px;
+    background-color: darkviolet;
+}
+#instruction{
+    position: absolute;
+    width: 350px;
+    font-size: 25px;
+    animation: instruc 1s forwards;
+}
+@keyframes instruc{
+    from{
+        margin-left: -350px;
+    }
+    to{
+        margin-left: 0;
+    }
+}
