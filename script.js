@@ -217,9 +217,6 @@ function animate() {
         nor++;
         if(nor==br){
             rb++;
-            if(rb==4){
-                rb=undefined;
-            }
             nor=0;
         }
     }
